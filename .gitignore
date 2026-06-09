@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual Environments
+dip_venv/
+dip_env/
+.conda/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Output / Model files
+*.onnx
+*.pt
+*.pth
+runs/
+output_*/
+
+# Jupyter
+.ipynb_checkpoints/
