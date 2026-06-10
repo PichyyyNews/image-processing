@@ -138,10 +138,10 @@ conda activate dip_env
 > วิธีนี้เหมาะสำหรับนักศึกษาที่ **ไม่ต้องการติดตั้ง Miniconda** หรือ Conda ใช้ไม่ได้  
 > ต้องดาวน์โหลด Python 3.10 มาติดตั้งแยกต่างหาก
 
-### 2.1 ขั้นตอนติดตั้ง Python 3.10
+### 2.1 ขั้นตอนติดตั้ง Python 3.14+
 
-1. ดาวน์โหลด Python 3.10 จาก [python.org/downloads](https://www.python.org/downloads/release/python-31012/)
-2. ในหน้าต่างติดตั้ง **ต้องทำเครื่องหมายถูก** ✅ ที่ช่อง **"Add Python 3.10 to PATH"**
+1. ดาวน์โหลด Python 3.14+ จาก [python.org/downloads](https://www.python.org/downloads/release/python-31012/)
+2. ในหน้าต่างติดตั้ง **ต้องทำเครื่องหมายถูก** ✅ ที่ช่อง **"Add Python 3.14+ to PATH"**
 3. เลือก **"Customize installation"** > ติ๊กถูกทุกอย่าง > กด **Install**
 
 ### 2.2 สร้างไฟล์ requirements.txt
@@ -168,7 +168,8 @@ python -m pip install --upgrade pip
 pip install torch --index-url https://download.pytorch.org/whl/cpu
 
 # ติดตั้งที่เหลือจาก requirements.txt (ข้าม torch/torchvision เพราะลงไปแล้ว)
-pip install numpy==1.24.3 matplotlib==3.7.1 opencv-python==4.6.0.66 ultralytics==8.0.196 mediapipe==0.10.7
+install requirements.txt
+
 ```
 
 > [!WARNING]
