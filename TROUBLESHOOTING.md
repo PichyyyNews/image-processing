@@ -168,7 +168,7 @@ python -m pip install --upgrade pip
 pip install torch --index-url https://download.pytorch.org/whl/cpu
 
 # ติดตั้งที่เหลือจาก requirements.txt (ข้าม torch/torchvision เพราะลงไปแล้ว)
-pip install -r requirements.txt
+pip install numpy matplotlib opencv-python torch torchvision ultralytics mediapipe
 
 ```
 
