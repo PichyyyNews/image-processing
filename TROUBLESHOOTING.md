@@ -165,7 +165,7 @@ mediapipe==0.10.7
 python -m pip install --upgrade pip
 
 # ติดตั้ง PyTorch จาก official index (CPU version)
-pip install torch==2.0.1+cpu torchvision==0.15.2+cpu --index-url https://download.pytorch.org/whl/cpu
+pip install torch --index-url https://download.pytorch.org/whl/cpu
 
 # ติดตั้งที่เหลือจาก requirements.txt (ข้าม torch/torchvision เพราะลงไปแล้ว)
 pip install numpy==1.24.3 matplotlib==3.7.1 opencv-python==4.6.0.66 ultralytics==8.0.196 mediapipe==0.10.7
