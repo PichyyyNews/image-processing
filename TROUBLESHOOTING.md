@@ -168,7 +168,7 @@ python -m pip install --upgrade pip
 pip install torch --index-url https://download.pytorch.org/whl/cpu
 
 # ติดตั้งที่เหลือจาก requirements.txt (ข้าม torch/torchvision เพราะลงไปแล้ว)
-install requirements.txt
+pip install -r requirements.txt
 
 ```
 
