@@ -149,13 +149,13 @@ conda activate dip_env
 สร้างไฟล์ `requirements.txt` ในโฟลเดอร์โปรเจกต์ โดยมีเนื้อหาดังนี้:
 
 ```txt
-numpy==1.24.3
-matplotlib==3.7.1
-opencv-python==4.6.0.66
-torch==2.0.1+cpu
-torchvision==0.15.2+cpu
-ultralytics==8.0.196
-mediapipe==0.10.7
+numpy>=1.26.0
+matplotlib>=3.8.0
+opencv-python>=4.9.0.80
+torch>=2.2.0
+torchvision>=0.17.0
+ultralytics>=8.1.0
+mediapipe>=0.10.9
 ```
 
 ### 2.3 ติดตั้งด้วย pip
