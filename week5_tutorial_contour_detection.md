@@ -106,6 +106,10 @@ blurred = cv2.GaussianBlur(gray, (5, 5), 0)
 # หากทดลองรันแล้ววัตถุไม่ถูกจับ ให้ปรับค่า Threshold '150' ขึ้นลงตามสภาพแสง
 _, thresh = cv2.threshold(blurred, 150, 255, cv2.THRESH_BINARY_INV)
 
+#adaptive_thresh = cv2.adaptiveThreshold
+#(blurred, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 2)
+
+
 # ==========================================
 # 3. ค้นหา Contour (Find Contours)
 # ==========================================
