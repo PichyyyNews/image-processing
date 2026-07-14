@@ -5,3 +5,4 @@ torch==2.0.1+cpu
 torchvision==0.15.2+cpu
 ultralytics==8.0.196
 mediapipe==0.10.7
+scikit-learn
