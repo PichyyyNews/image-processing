@@ -14,21 +14,21 @@
 
 | สัปดาห์ | หัวข้อ | ไฟล์เนื้อหา | ไฟล์สไลด์ | โค้ด / คำแนะนำ |
 |:---:|---|---|---|---|
-| 1 | บทนำ + ติดตั้งสภาพแวดล้อม Miniconda & VS Code | [week1_tutorial_basic_setup.md](week1_tutorial_basic_setup.md) | — | [check_env.py](check_env.py) |
-| 2 | การประมวลผลพิกเซลและการดำเนินการเรขาคณิต | [week2_tutorial_image_manipulation.md](week2_tutorial_image_manipulation.md) | [week2_slide_guide.md](week2_slide_guide.md) | — |
-| 3 | การจัดการแสง สี และการกรองภาพ | [week3_tutorial_contrast_filtering.md](week3_tutorial_contrast_filtering.md) | [week3_slide_outline.md](week3_slide_outline.md) | — |
-| 4 | การสกัดเส้นขอบและ Morphological Operations | [week4_tutorial_edge_morphology.md](week4_tutorial_edge_morphology.md) | [week4_slide_outline.md](week4_slide_outline.md) | [resourceweek4.md](resourceweek4.md) |
-| 5 | การตรวจจับโครงร่างและ Auto-Cropper | [week5_tutorial_contour_detection.md](week5_tutorial_contour_detection.md) | [week5_slide_outline.md](week5_slide_outline.md) | [codeweek5/](codeweek5/) |
-| 6 | โดเมนความถี่ (DFT/FFT) และ Image Inpainting | [week6_detailed_guide.md](week6_detailed_guide.md) | [week6_slide_outline.md](week6_slide_outline.md) | [week6_code_guide.md](week6_code_guide.md) |
-| 7 | การจับคู่จุดเด่นภาพ (SIFT, ORB, Homography) | [week7_detailed_guide.md](week7_detailed_guide.md) | [week7_slide_outline.md](week7_slide_outline.md) | [week7_code_guide.md](week7_code_guide.md) |
-| 8 | 🔬 การทดสอบกลางภาคเรียน (Midterm Review) | [week8_midterm_review_guide.md](week8_midterm_review_guide.md) | [week8_slide_outline.md](week8_slide_outline.md) | [week8_course_outline.md](week8_course_outline.md) |
-| 9 | Deep Learning & CNN ด้วย PyTorch | [week9_detailed_guide.md](week9_detailed_guide.md) | [week9_slide_outline.md](week9_slide_outline.md) | [train_mnist.py](train_mnist.py), [infer_mnist.py](infer_mnist.py) |
-| 10 | Transfer Learning (MobileNetV3) & ONNX | [week10_detailed_guide.md](week10_detailed_guide.md) | [week10_slide_outline.md](week10_slide_outline.md) | [train_transfer_onnx.py](train_transfer_onnx.py), [infer_onnx.py](infer_onnx.py) |
-| 11 | YOLO Object Detection Inference | [week11_detailed_guide.md](week11_detailed_guide.md) | [week11_slide_outline.md](week11_slide_outline.md) | [yolo_inference_demo.py](yolo_inference_demo.py) |
-| 12 | Custom YOLO Training & Evaluation | [week12_detailed_guide.md](week12_detailed_guide.md) | [week12_slide_outline.md](week12_slide_outline.md) | [train_custom_yolo.py](train_custom_yolo.py) |
-| 13 | MediaPipe Pose & Hand Landmark Tracking | [week13_detailed_guide.md](week13_detailed_guide.md) | [week13_slide_outline.md](week13_slide_outline.md) | [mediapipe_demo.py](mediapipe_demo.py) |
-| 14 | 🏆 การนำเสนอโครงงาน Mini-Project | [week14_detailed_guide.md](week14_detailed_guide.md) | [week14_slide_outline.md](week14_slide_outline.md) | [week14_mini_project_guide.md](week14_mini_project_guide.md) |
-| 15 | 🔬 การทดสอบปลายภาคเรียน (Final Exam Review) | [week15_detailed_guide.md](week15_detailed_guide.md) | [week15_slide_outline.md](week15_slide_outline.md) | [week15_final_exam_guide.md](week15_final_exam_guide.md) |
+| 1 | บทนำ + ติดตั้งสภาพแวดล้อม Miniconda & VS Code | [week1_tutorial_basic_setup.md](week01/week1_tutorial_basic_setup.md) | — | [check_env.py](check_env.py) |
+| 2 | การประมวลผลพิกเซลและการดำเนินการเรขาคณิต | [week2_tutorial_image_manipulation.md](week02/week2_tutorial_image_manipulation.md) | [week2_slide_guide.md](week02/week2_slide_guide.md) | — |
+| 3 | การจัดการแสง สี และการกรองภาพ | [week3_tutorial_contrast_filtering.md](week03/week3_tutorial_contrast_filtering.md) | [week3_slide_outline.md](week03/week3_slide_outline.md) | — |
+| 4 | การสกัดเส้นขอบและ Morphological Operations | [week4_tutorial_edge_morphology.md](week04/week4_tutorial_edge_morphology.md) | [week4_slide_outline.md](week04/week4_slide_outline.md) | [resourceweek4.md](week04/resourceweek4.md) |
+| 5 | การตรวจจับโครงร่างและ Auto-Cropper | [week5_tutorial_contour_detection.md](week05/week5_tutorial_contour_detection.md) | [week5_slide_outline.md](week05/week5_slide_outline.md) | [codeweek5/](week05/codeweek5/) |
+| 6 | โดเมนความถี่ (DFT/FFT) และ Image Inpainting | [week6_detailed_guide.md](week06/week6_detailed_guide.md) | [week6_slide_outline.md](week06/week6_slide_outline.md) | [week6_code_guide.md](week06/week6_code_guide.md) |
+| 7 | การจับคู่จุดเด่นภาพ (SIFT, ORB, Homography) | [week7_detailed_guide.md](week07/week7_detailed_guide.md) | [week7_slide_outline.md](week07/week7_slide_outline.md) | [week7_code_guide.md](week07/week7_code_guide.md) |
+| 8 | 🔬 การทดสอบกลางภาคเรียน (Midterm Review) | [week8_midterm_review_guide.md](week08/week8_midterm_review_guide.md) | [week8_slide_outline.md](week08/week8_slide_outline.md) | [week8_course_outline.md](week08/week8_course_outline.md) |
+| 9 | Deep Learning & CNN ด้วย PyTorch | [week9_detailed_guide.md](week09/week9_detailed_guide.md) | [week9_slide_outline.md](week09/week9_slide_outline.md) | [train_mnist.py](week09/train_mnist.py), [infer_mnist.py](week09/infer_mnist.py) |
+| 10 | Transfer Learning (MobileNetV3) & ONNX | [week10_detailed_guide.md](week10/week10_detailed_guide.md) | [week10_slide_outline.md](week10/week10_slide_outline.md) | [train_transfer_onnx.py](week10/train_transfer_onnx.py), [infer_onnx.py](week10/infer_onnx.py) |
+| 11 | YOLO Object Detection Inference | [week11_detailed_guide.md](week11/week11_detailed_guide.md) | [week11_slide_outline.md](week11/week11_slide_outline.md) | [yolo_inference_demo.py](week11/yolo_inference_demo.py) |
+| 12 | Custom YOLO Training & Evaluation | [week12_detailed_guide.md](week12/week12_detailed_guide.md) | [week12_slide_outline.md](week12/week12_slide_outline.md) | [train_custom_yolo.py](week12/train_custom_yolo.py) |
+| 13 | MediaPipe Pose & Hand Landmark Tracking | [week13_detailed_guide.md](week13/week13_detailed_guide.md) | [week13_slide_outline.md](week13/week13_slide_outline.md) | [mediapipe_demo.py](week13/mediapipe_demo.py) |
+| 14 | 🏆 การนำเสนอโครงงาน Mini-Project | [week14_detailed_guide.md](week14/week14_detailed_guide.md) | [week14_slide_outline.md](week14/week14_slide_outline.md) | [week14_mini_project_guide.md](week14/week14_mini_project_guide.md) |
+| 15 | 🔬 การทดสอบปลายภาคเรียน (Final Exam Review) | [week15_detailed_guide.md](week15/week15_detailed_guide.md) | [week15_slide_outline.md](week15/week15_slide_outline.md) | [week15_final_exam_guide.md](week15/week15_final_exam_guide.md) |
 
 ---
 
