@@ -1,6 +1,14 @@
 # check_env.py — สคริปต์ตรวจสอบ Environment
 # รัน: python check_env.py
 import sys
+import io
+
+# Reconfigure stdout for UTF-8 on Windows terminals
+if sys.stdout.encoding != 'utf-8':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except AttributeError:
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 
 def check_library(name, import_name=None, version_attr="__version__"):
