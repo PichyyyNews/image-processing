@@ -45,16 +45,13 @@ image-processing/
 ├── 📄 requirements.txt                   ← รายการ package ที่จำเป็น
 ├── 🐍 check_env.py                       ← สคริปต์ตรวจสอบเวอร์ชัน Environment
 │
-├── 🤖 ml_model_training/                 ← โมดูลหลักสูตรการฝึกฝนโมเดล ML, Loss & Cost Functions, Optimizers & Troubleshooting
-│   ├── README.md                         ← สารบัญหลักสูตร ML Model Training
-│   ├── 01_ml_pipeline_and_outliers.md    ← บทที่ 1: สถาปัตยกรรม ML Pipeline & การจัดการ Outliers (IQR / Z-Score)
-│   ├── 02_overfitting_underfitting_cross_validation.md ← บทที่ 2: Overfitting, Bias-Variance, Stratified K-Fold & Regularization
-│   ├── 03_evaluation_metrics_classification_regression.md ← บทที่ 3: Confusion Matrix, F1-Score, ROC-AUC, MSE & R²
-│   ├── 04_loss_and_cost_functions_mastery.md ← บทที่ 4: เจาะลึก Loss vs Cost Functions (BCE, CCE, Focal, MSE, Huber, CIoU)
-│   ├── 05_optimizers_gradient_descent_and_troubleshooting.md ← บทที่ 5: Gradient Descent, AdamW, LR Schedulers & Troubleshooting Matrix
-│   ├── 01_pipeline_and_outliers.py       ← โค้ดตัวอย่าง Pipeline & Outlier Cleanup
-│   ├── 02_overfitting_cross_val.py       ← โค้ดตัวอย่าง Stratified K-Fold & L2 Regularization
-│   └── 03_evaluation_metrics_demo.py     ← โค้ดตัวอย่าง Confusion Matrix & ROC Plotting
+├── 👁️ ml_model_training/                 ← โมดูลหลักสูตรการฝึกฝนโมเดล Computer Vision, YOLO Object Detection, Image Classification & Vision Losses
+│   ├── README.md                         ← สารบัญหลักสูตร Computer Vision Model Training
+│   ├── 01_image_ml_pipeline_and_data_quality.md ← บทที่ 1: สถาปัตยกรรม Image ML Pipeline, การคัดกรองภาพเบลอ (Laplacian) & Letterbox Resize
+│   ├── 02_vision_overfitting_and_augmentation.md ← บทที่ 2: Vision Overfitting, Spatial Dropout, MixUp, CutMix, Mosaic (YOLO) & Transfer Learning
+│   ├── 03_cv_evaluation_metrics_classification_detection.md ← บทที่ 3: ตัวชี้วัดภาพ: Top-1/Top-5 Acc, IoU, Precision-Recall Curve, mAP@0.5, mAP@0.5:0.95 & NMS
+│   ├── 04_vision_loss_functions_mastery.md ← บทที่ 4: เจาะลึก Loss โมเดลภาพ: Label Smoothing, Focal Loss, วิวัฒนาการ Box Loss สู่ YOLO CIoU Loss
+│   └── 05_vision_optimizers_training_and_troubleshooting.md ← บทที่ 5: Vision Optimizers (SGD/AdamW), Mixed Precision (AMP), Gradient Accumulation & Vision Troubleshooting Matrix
 │
 ├── 📚 Week 1 – Basic Setup & Image I/O
 │   ├── (Digital Image Processing) Week 1 .pdf
