@@ -37,11 +37,9 @@ my_detection_dataset/
 
 ## 📝 รูปแบบข้อมูลพิกัดในไฟล์ `.txt` (Normalized Bounding Box Format)
 
-แต่ละบรรทัดในไฟล์ `.txt` จะแทนวัตถุ 1 ชิ้นในภาพ โดยมีค่าตัวเลข 5 ค่า คั่นด้วยเว้นวรรค:
+> **รูปแบบโครงสร้าง (Format):** `<class_id> <x_center> <y_center> <width> <height>`
 
-$$\text{Format:} \quad \langle\text{class\_id}\rangle \quad \langle x_{\text{center}}\rangle \quad \langle y_{\text{center}}\rangle \quad \langle\text{width}\rangle \quad \langle\text{height}\rangle$$
-
-```
+```text
 0 0.450000 0.520000 0.200000 0.350000
 1 0.780000 0.610000 0.150000 0.220000
 ```

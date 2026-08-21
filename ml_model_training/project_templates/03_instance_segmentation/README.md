@@ -22,12 +22,9 @@ my_segmentation_dataset/
 └── labels/ (train/, val/)
 ```
 
-### 📝 รูปแบบข้อมูลพิกัดในไฟล์ `.txt` (Normalized Polygon Coordinates)
-ต่างจาก Object Detection ตรงที่มีจุดพิกัดรูปหลายเหลี่ยม ($x, y$) หลายจุดต่อกัน:
+> **รูปแบบโครงสร้าง (Format):** `<class_id> <x1> <y1> <x2> <y2> <x3> <y3> ... <xn> <yn>`
 
-$$\langle\text{class\_id}\rangle \quad x_1 \quad y_1 \quad x_2 \quad y_2 \quad x_3 \quad y_3 \quad \dots \quad x_n \quad y_n$$
-
-```
+```text
 0 0.25 0.30 0.35 0.28 0.45 0.40 0.40 0.60 0.22 0.55
 ```
 
