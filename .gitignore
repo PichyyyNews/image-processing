@@ -28,6 +28,8 @@ desktop.ini
 *.onnx
 *.pt
 *.pth
+*.joblib
+saved_models/
 runs/
 output_*/
 
