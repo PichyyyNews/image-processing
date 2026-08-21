@@ -45,14 +45,13 @@ image-processing/
 ├── 📄 requirements.txt                   ← รายการ package ที่จำเป็น
 ├── 🐍 check_env.py                       ← สคริปต์ตรวจสอบเวอร์ชัน Environment
 │
-├── 🤖 ml_model_training/                 ← โมดูลพื้นฐานการฝึกฝนโมเดล ML, Loss Functions, Optimizers & Troubleshooting
-│   ├── README.md                         ← สารบัญบทเรียน ML Model Training
-│   ├── 01_ml_training_pipeline.md        ← คู่มือ 7 ขั้นตอน ML Pipeline & IQR/Z-score Outliers
-│   ├── 02_overfitting_underfitting.md    ← คู่มือ Overfitting, Bias-Variance & Cross-Validation
-│   ├── 03_evaluation_metrics.md          ← คู่มือ Confusion Matrix, F1-Score & ROC-AUC
-│   ├── 04_loss_and_cost_functions.md     ← คู่มือ Loss vs Cost Functions (BCE, CCE, Focal, MSE, Huber, CIoU)
-│   ├── 05_optimizers_and_gradient_descent.md ← คู่มือ Gradient Descent, Optimizers (SGD, AdamW) & LR Schedulers
-│   ├── 06_training_monitoring_and_troubleshooting.md ← คู่มือ Monitoring Training Curves & Loss Troubleshooting Matrix
+├── 🤖 ml_model_training/                 ← โมดูลหลักสูตรการฝึกฝนโมเดล ML, Loss & Cost Functions, Optimizers & Troubleshooting
+│   ├── README.md                         ← สารบัญหลักสูตร ML Model Training
+│   ├── 01_ml_pipeline_and_outliers.md    ← บทที่ 1: สถาปัตยกรรม ML Pipeline & การจัดการ Outliers (IQR / Z-Score)
+│   ├── 02_overfitting_underfitting_cross_validation.md ← บทที่ 2: Overfitting, Bias-Variance, Stratified K-Fold & Regularization
+│   ├── 03_evaluation_metrics_classification_regression.md ← บทที่ 3: Confusion Matrix, F1-Score, ROC-AUC, MSE & R²
+│   ├── 04_loss_and_cost_functions_mastery.md ← บทที่ 4: เจาะลึก Loss vs Cost Functions (BCE, CCE, Focal, MSE, Huber, CIoU)
+│   ├── 05_optimizers_gradient_descent_and_troubleshooting.md ← บทที่ 5: Gradient Descent, AdamW, LR Schedulers & Troubleshooting Matrix
 │   ├── 01_pipeline_and_outliers.py       ← โค้ดตัวอย่าง Pipeline & Outlier Cleanup
 │   ├── 02_overfitting_cross_val.py       ← โค้ดตัวอย่าง Stratified K-Fold & L2 Regularization
 │   └── 03_evaluation_metrics_demo.py     ← โค้ดตัวอย่าง Confusion Matrix & ROC Plotting

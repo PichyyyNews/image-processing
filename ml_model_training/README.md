@@ -1,75 +1,51 @@
-# 🤖 คู่มือและตัวอย่างการฝึกฝนโมเดล Machine Learning (ML Model Training Guide)
+# 🤖 คู่มือหลักสูตรการฝึกฝนโมเดล Machine Learning (Master ML Training & Evaluation Course)
 
-ยินดีต้อนรับสู่โมดูล **ML Model Training & Evaluation Fundamentals** คลังบทเรียนและซอร์สโค้ดตัวอย่างภาษา Python สำหรับเรียนรู้กระบวนการฝึกฝนโมเดลการเรียนรู้ของเครื่อง (Machine Learning) ตั้งแต่ระดับพื้นฐานไปจนถึงการนำไปใช้งานจริงในภาคอุตสาหกรรม
-
----
-
-## 📚 สารบัญเนื้อหาและสคริปต์ตัวอย่าง
-
-| # | หัวข้อบทเรียน | ไฟล์เอกสารทฤษฎี | ไฟล์สคริปต์ตัวอย่าง Python |
-|:---:|---|---|---|
-| **1** | **ML Training Pipeline & Outlier Handling** | [`01_ml_training_pipeline.md`](01_ml_training_pipeline.md) | [`01_pipeline_and_outliers.py`](01_pipeline_and_outliers.py) |
-| **2** | **Overfitting, Underfitting & Cross-Validation** | [`02_overfitting_underfitting.md`](02_overfitting_underfitting.md) | [`02_overfitting_cross_val.py`](02_overfitting_cross_val.py) |
-| **3** | **Evaluation Metrics & Model Performance** | [`03_evaluation_metrics.md`](03_evaluation_metrics.md) | [`03_evaluation_metrics_demo.py`](03_evaluation_metrics_demo.py) |
-| **4** | **Loss Functions vs Cost Functions** | [`04_loss_and_cost_functions.md`](04_loss_and_cost_functions.md) | — |
-| **5** | **Optimizers, Gradient Descent & Schedulers** | [`05_optimizers_and_gradient_descent.md`](05_optimizers_and_gradient_descent.md) | — |
-| **6** | **Training Monitoring & Troubleshooting Matrix** | [`06_training_monitoring_and_troubleshooting.md`](06_training_monitoring_and_troubleshooting.md) | — |
+ยินดีต้อนรับสู่หลักสูตร **Machine Learning Model Training, Loss Functions & Evaluation Metrics** เอกสารชุดนี้ถูกจัดเรียงเป็น 5 บทเรียนลำดับต่อเนื่อง ครอบคลุมตั้งแต่กระบวนการเตรียมข้อมูล (Pipeline & Outliers), ปัญหาการเรียนรู้ (Overfitting & Underfitting), การวัดผลประสิทธิภาพ (Evaluation Metrics), ฟังก์ชันความสูญเสีย (Loss & Cost Functions) ไปจนถึงอัลกอริทึม Optimizers และตารางแก้ปัญหาการเทรน (Troubleshooting Matrix) 
 
 ---
 
-## 🎯 สรุปมโนทัศน์สำคัญในแต่ละบท
+## 📚 สารบัญบทเรียนและการนำทาง (Curriculum Roadmap)
 
-### 1. ML Training Pipeline & Outliers
-* **7 ขั้นตอนสำคัญของ Pipeline:** Data Collection $\rightarrow$ Data Preprocessing $\rightarrow$ Feature Scaling $\rightarrow$ Train/Test Split $\rightarrow$ Model Training $\rightarrow$ Evaluation $\rightarrow$ Model Persistence (`joblib`/`pickle`)
-* **การตรวจจับและจัดการ Outliers:** ใช้วิธี **IQR (Interquartile Range)** และ **Z-Score** เพื่อจัดการค่าสุดโต่งที่อาจส่งผลให้โมเดลคลาดเคลื่อน
-
-### 2. Overfitting & Underfitting
-* **Bias-Variance Tradeoff:**
-  * **Underfitting (High Bias):** โมเดลเรียบง่ายเกินไป ทายผลลบทั้งชุด Train และ Test
-  * **Overfitting (High Variance):** โมเดลจดจำข้อมูลมากเกินไป ผลลัพธ์ Train ดีเยี่ยม แต่ Test ต่ำ
-* **วิธีแก้ไข:** การทำ **K-Fold / Stratified K-Fold Cross-Validation**, การใช้ **Regularization (L1 Lasso / L2 Ridge)**, และการสังเกต **Learning Curves**
-
-### 3. Evaluation Metrics
-* **Classification Metrics:** Confusion Matrix (TP, TN, FP, FN), Accuracy, Precision, Recall, F1-Score (Micro/Macro/Weighted), ROC-AUC Curve
-* **Regression Metrics:** Mean Squared Error (MSE), Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), $R^2$ Score
-
-### 4. Loss Functions & Cost Functions
-* **Loss vs Cost:** Loss คำนวณความผิดพลาดรายจุด $L(y_i, \hat{y}_i)$, Cost คือค่าเฉลี่ยความผิดพลาดรวมทั้งชุดข้อมูล $J(w, b)$
-* **Classification Losses:** Binary Cross-Entropy (Log Loss), Categorical / Sparse Categorical Cross-Entropy, Focal Loss, Hinge Loss
-* **Regression Losses:** MSE (L2), MAE (L1), Huber Loss (Smooth L1 - Robust ต่อ Outliers)
-* **Object Detection & Metric Losses:** IoU, GIoU, DIoU, CIoU Loss, Triplet Loss
-
-### 5. Optimizers, Gradient Descent & Learning Rates
-* **Gradient Descent Math:** $\theta_{t+1} = \theta_t - \alpha \nabla_{\theta} J(\theta)$
-* **Batch Variants:** Batch GD, Stochastic GD (SGD), Mini-batch GD
-* **Evolution of Optimizers:** SGD $\rightarrow$ Momentum $\rightarrow$ RMSprop $\rightarrow$ Adam $\rightarrow$ **AdamW** (Decoupled Weight Decay)
-* **Learning Rate Schedulers:** StepLR, ReduceLROnPlateau, Cosine Annealing with Warmup
-
-### 6. Training Monitoring & Troubleshooting
-* **Training Dynamics:** Epochs, Iterations/Steps, Batch Size
-* **Loss Curve Diagnostics:** วิธีวิเคราะห์การแกว่ง การดิ่ง หรือการพุ่งขึ้นของ Train vs Validation Loss Curves
-* **Vanishing & Exploding Gradients:** สาเหตุและวิธีแก้ (ReLU/GELU, ResNet Skip Connections, Gradient Clipping, BatchNorm)
-* **Troubleshooting Matrix:** คู่มือแก้ปัญหา Loss = `NaN`/`Inf`, Loss Plateau, และ Loss Oscillation
-
----
-
-## 🛠️ วิธีการรันสคริปต์ตัวอย่าง
-
-เปิด Terminal ใน VS Code และ activate environment:
-
-```bash
-conda activate dip_env
+```mermaid
+flowchart LR
+    CH1["<b>บทที่ 1</b><br>ML Pipeline & Outliers"] --> CH2["<b>บทที่ 2</b><br>Overfitting & Cross-Val"]
+    CH2 --> CH3["<b>บทที่ 3</b><br>Evaluation Metrics"]
+    CH3 --> CH4["<b>บทที่ 4</b><br>Loss & Cost Functions"]
+    CH4 --> CH5["<b>บทที่ 5</b><br>Optimizers & Troubleshooting"]
 ```
 
-รันสคริปต์ตัวอย่างตามต้องการ:
+| บทที่ | หัวข้อบทเรียน | ไฟล์คู่มือการเรียนรู้ฉบับสมบูรณ์ (พร้อมโค้ด & ไดอะแกรม) | สาระสำคัญ |
+|:---:|---|---|---|
+| **1** | **ML Pipeline & Outliers** | [`01_ml_pipeline_and_outliers.md`](01_ml_pipeline_and_outliers.md) | สถาปัตยกรรม 7 ขั้นตอน, การตัด Outliers (IQR / Z-Score), Scaling & Data Leakage |
+| **2** | **Overfitting & Cross-Validation** | [`02_overfitting_underfitting_cross_validation.md`](02_overfitting_underfitting_cross_validation.md) | Bias-Variance Tradeoff, Learning Curves, Stratified K-Fold CV, L1/L2 Regularization |
+| **3** | **Evaluation Metrics** | [`03_evaluation_metrics_classification_regression.md`](03_evaluation_metrics_classification_regression.md) | Confusion Matrix, Precision/Recall, F1-Score (Macro/Micro), ROC-AUC, MSE/R² |
+| **4** | **Loss & Cost Functions** | [`04_loss_and_cost_functions_mastery.md`](04_loss_and_cost_functions_mastery.md) | Loss vs Cost, BCE, CCE, Focal Loss, MSE, MAE, Huber Loss, CIoU Box Loss |
+| **5** | **Optimizers & Troubleshooting** | [`05_optimizers_gradient_descent_and_troubleshooting.md`](05_optimizers_gradient_descent_and_troubleshooting.md) | Gradient Descent, SGD, Adam, AdamW, LR Schedulers, Vanishing Gradients & Troubleshooting Matrix |
+
+---
+
+## 🎯 จุดเด่นของเอกสารชุดนี้
+
+1. **ครบจบในไฟล์เดียว (Self-Contained):** แต่ละบทมีทั้งคำอธิบายทฤษฎีระดับตำราวิชาการ, สูตรคณิตศาสตร์ ($\LaTeX$), ผังงาน Mermaid, ภาพไดอะแกรม ASCII, และโค้ดตัวอย่าง Python ที่ก๊อปปี้ไปรันได้ทันที
+2. **มีตัวอย่างผลลัพธ์การรัน (Expected Outputs):** แสดงค่าตัวเลขจากการคำนวณจริง เพื่อให้ผู้เรียนเปรียบเทียบผลลัพธ์ได้ทันที
+3. **คู่มือแก้บัคภาคปฏิบัติ (Troubleshooting Matrix):** รวมตารางแก้ปัญหาที่พบบ่อย เช่น Loss = `NaN`/`Inf`, Loss ไม่ยอมลด (Plateau), และ Loss สั่นสะเทือน
+
+---
+
+## 🛠️ การรันสคริปต์ตัวอย่างในเครื่อง
+
+คุณสามารถเปิด Terminal และสั่งรันสคริปต์ตัวอย่างทั้งหมดได้ดังนี้:
 
 ```bash
-# 1. รันตัวอย่าง Pipeline และการลบ Outliers
+# Activate conda environment
+conda activate dip_env
+
+# รันบทเรียนที่ 1: Pipeline & Outliers
 python ml_model_training/01_pipeline_and_outliers.py
 
-# 2. รันตัวอย่าง Cross-Validation และแก้ปัญหา Overfitting
+# รันบทเรียนที่ 2: Overfitting & Cross-Validation
 python ml_model_training/02_overfitting_cross_val.py
 
-# 3. รันตัวอย่างการคำนวณและพล็อตกราฟ Evaluation Metrics
+# รันบทเรียนที่ 3: Evaluation Metrics & Plotting
 python ml_model_training/03_evaluation_metrics_demo.py
 ```
