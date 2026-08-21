@@ -51,7 +51,13 @@ image-processing/
 │   ├── 02_vision_overfitting_and_augmentation.md ← บทที่ 2: Vision Overfitting, Spatial Dropout, MixUp, CutMix, Mosaic (YOLO) & Transfer Learning
 │   ├── 03_cv_evaluation_metrics_classification_detection.md ← บทที่ 3: ตัวชี้วัดภาพ: Top-1/Top-5 Acc, IoU, Precision-Recall Curve, mAP@0.5, mAP@0.5:0.95 & NMS
 │   ├── 04_vision_loss_functions_mastery.md ← บทที่ 4: เจาะลึก Loss โมเดลภาพ: Label Smoothing, Focal Loss, วิวัฒนาการ Box Loss สู่ YOLO CIoU Loss
-│   └── 05_vision_optimizers_training_and_troubleshooting.md ← บทที่ 5: Vision Optimizers (SGD/AdamW), Mixed Precision (AMP), Gradient Accumulation & Vision Troubleshooting Matrix
+│   ├── 05_vision_optimizers_training_and_troubleshooting.md ← บทที่ 5: Vision Optimizers (SGD/AdamW), Mixed Precision (AMP), Gradient Accumulation & Vision Troubleshooting Matrix
+│   └── 📁 project_templates/             ← โฟลเดอร์รวม 5 แม่แบบโปรเจกต์ Computer Vision พร้อมใช้งาน
+│       ├── 01_image_classification/      ← แม่แบบจำแนกประเภทภาพ (YOLO-Cls / PyTorch)
+│       ├── 02_object_detection_yolo/     ← แม่แบบตรวจจับวัตถุ (YOLOv8/v11 Bounding Box Detection)
+│       ├── 03_instance_segmentation/     ← แม่แบบแบ่งส่วนวัตถุและวัดพื้นที่รอยโรค (YOLO-Seg)
+│       ├── 04_pose_estimation_and_keypoints/ ← แม่แบบ AI ตรวจจับท่าทาง & นับรอบ Squat (YOLO-Pose)
+│       └── 05_object_tracking_and_counting/  ← แม่แบบติดตามวัตถุและนับจำนวนข้ามเส้น (YOLO MOT)
 │
 ├── 📚 Week 1 – Basic Setup & Image I/O
 │   ├── (Digital Image Processing) Week 1 .pdf

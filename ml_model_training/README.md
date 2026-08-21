@@ -33,3 +33,18 @@ flowchart LR
 1. **เชื่อมโยงกับเนื้อหา OpenCV / PyTorch / YOLO ในโปรเจกต์ 100%:** สอดคล้องกับแล็บตั้งแต่ Week 1 ถึง Week 15
 2. **ครบถ้วนในตัว (Self-Contained):** ในแต่ละบทประกอบด้วยทฤษฎีระดับสากล, สูตรคณิตศาสตร์ ($\LaTeX$), ไดอะแกรม Mermaid, ภาพประกอบ ASCII, และโค้ด PyTorch ที่นำไปรันได้ทันที
 3. **คู่มือแก้ปัญหาภาคสนาม (Vision Troubleshooting Matrix):** ช่วยให้นักศึกษาและนักพัฒนาแก้ปัญหาที่พบบ่อยในการเทรนโมเดลภาพ เช่น แรมการ์ดจอเต็ม (`CUDA OOM`), Loss กลายเป็น `NaN`, หรือโมเดลหาวัตถุไม่เจอได้อย่างตรงจุด
+
+---
+
+## 🛠️ โฟลเดอร์ Template โปรเจกต์ตัวอย่างพร้อมใช้งาน (`project_templates/`)
+
+สำหรับนักศึกษาที่ต้องการเลือกหัวข้อไปทำ Mini-Project หรือโครงงานจบ สามารถเข้าไปดูโค้ดและการจัดเตรียม Dataset ตามโฟลเดอร์ย่อยด้านล่างนี้ได้ทันที:
+
+| # | รูปแบบโปรเจกต์ (Task Type) | โฟลเดอร์ Template | โมเดล / ไลบรารี | สคริปต์ที่มีในโฟลเดอร์ |
+|:---:|---|---|:---:|---|
+| **1** | **Image Classification**<br>(จำแนกประเภทขยะ, แยกโรคพืช, คัดเกรดผลไม้) | [`project_templates/01_image_classification/`](project_templates/01_image_classification/) | YOLO11-Cls / MobileNetV3 | `train_classification.py`<br>`predict_classification.py` |
+| **2** | **Object Detection**<br>(ตรวจจับหมวกนิรภัย PPE, นับรถยนต์, ตรวจจับวัชพืช) | [`project_templates/02_object_detection_yolo/`](project_templates/02_object_detection_yolo/) | YOLO11 / YOLOv8 | `create_sample_dataset.py`<br>`train_detection.py`<br>`predict_detection.py` |
+| **3** | **Instance Segmentation**<br>(วัดพื้นที่รอยโรคบนใบไม้, ตรวจจับเซลล์, แบ่งเลนถนน) | [`project_templates/03_instance_segmentation/`](project_templates/03_instance_segmentation/) | YOLO11-Seg | `train_segmentation.py`<br>`predict_segmentation.py` |
+| **4** | **Pose & Keypoint Tracking**<br>(AI นับครั้ง Squat ออกกำลังกาย, ตรวจจับท่านั่ง) | [`project_templates/04_pose_estimation_and_keypoints/`](project_templates/04_pose_estimation_and_keypoints/) | YOLO11-Pose / MediaPipe | `squat_fitness_counter.py`<br>`yolo_pose_infer.py` |
+| **5** | **Multi-Object Tracking & Line Counter**<br>(นับจำนวนคนเดินเข้าออกร้าน, วัดความหนาแน่นจราจร) | [`project_templates/05_object_tracking_and_counting/`](project_templates/05_object_tracking_and_counting/) | YOLO Tracking (ByteTrack) | `line_crossing_counter.py` |
+
