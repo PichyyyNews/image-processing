@@ -45,11 +45,14 @@ image-processing/
 ├── 📄 requirements.txt                   ← รายการ package ที่จำเป็น
 ├── 🐍 check_env.py                       ← สคริปต์ตรวจสอบเวอร์ชัน Environment
 │
-├── 🤖 ml_model_training/                 ← โมดูลพื้นฐานการฝึกฝนโมเดล ML, Outliers, Overfitting & Evaluation Metrics
+├── 🤖 ml_model_training/                 ← โมดูลพื้นฐานการฝึกฝนโมเดล ML, Loss Functions, Optimizers & Troubleshooting
 │   ├── README.md                         ← สารบัญบทเรียน ML Model Training
 │   ├── 01_ml_training_pipeline.md        ← คู่มือ 7 ขั้นตอน ML Pipeline & IQR/Z-score Outliers
 │   ├── 02_overfitting_underfitting.md    ← คู่มือ Overfitting, Bias-Variance & Cross-Validation
 │   ├── 03_evaluation_metrics.md          ← คู่มือ Confusion Matrix, F1-Score & ROC-AUC
+│   ├── 04_loss_and_cost_functions.md     ← คู่มือ Loss vs Cost Functions (BCE, CCE, Focal, MSE, Huber, CIoU)
+│   ├── 05_optimizers_and_gradient_descent.md ← คู่มือ Gradient Descent, Optimizers (SGD, AdamW) & LR Schedulers
+│   ├── 06_training_monitoring_and_troubleshooting.md ← คู่มือ Monitoring Training Curves & Loss Troubleshooting Matrix
 │   ├── 01_pipeline_and_outliers.py       ← โค้ดตัวอย่าง Pipeline & Outlier Cleanup
 │   ├── 02_overfitting_cross_val.py       ← โค้ดตัวอย่าง Stratified K-Fold & L2 Regularization
 │   └── 03_evaluation_metrics_demo.py     ← โค้ดตัวอย่าง Confusion Matrix & ROC Plotting
